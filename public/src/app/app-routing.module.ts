@@ -4,9 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
-  {path: 'onthespot', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path:'edit', component:EditComponent},
-  {path:'', pathMatch:'full', redirectTo: '/onthespot'},
+  {path:'', pathMatch:'full', redirectTo: '/'},
 
 ];
 
