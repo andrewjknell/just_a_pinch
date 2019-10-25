@@ -9,6 +9,7 @@ export class HttpService {
     constructor(private _http: HttpClient) { }
 
     getRecipes(istr,qstr) {
+        console.log(istr);
         return this._http.get(`/api/${istr}/${qstr}`)
         
     }

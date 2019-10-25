@@ -11,61 +11,60 @@ import { FormBuilder, FormGroup, FormControl, FormArray } from "@angular/forms";
 })
 export class HomeComponent implements OnInit {
     igs: any = [
-        [{ name: "All Purpose Flour", value: "flour", isChecked: false },
-        { name: "Baking Soda", value: "baking soda", isChecked: false },
-        { name: "Baking Powder", value: "baking powder", isChecked: false },
-        { name: "Rolled Oats", value: "rolled oat", isChecked: false },
-        { name: "Yeast", value: "yeast", isChecked: false },
-        { name: "Cornstarch", value: "cornstarch", isChecked: false },
-        { name: "Cake Mix", value: "cake mix", isChecked: false },
-        { name: "Coconut Flakes", value: "flaked coconut", isChecked: false },
-        { name: "Cocoa Powder", value: "cocoa powder", isChecked: false },
-        { name: "Nuts", value: "nuts", isChecked: false },
-        { name: "Vanilla Extract", value: "vanilla extract", isChecked: false },
+        [{ name: "All Purpose Flour", value: "flour" },
+        { name: "Baking Soda", value: "baking soda" },
+        { name: "Baking Powder", value: "baking powder" },
+        { name: "Rolled Oats", value: "rolled oat" },
+        { name: "Yeast", value: "yeast" },
+        { name: "Cornstarch", value: "cornstarch" },
+        { name: "Cake Mix", value: "cake mix" },
+        { name: "Coconut Flakes", value: "flaked coconut" },
+        { name: "Cocoa Powder", value: "cocoa powder" },
+        { name: "Nuts", value: "nuts" },
+        { name: "Vanilla Extract", value: "vanilla extract" },
         ], [
-            { name: "Sugar", value: "sugar", isChecked: false },
-            { name: "Brown Sugar", value: "brown sugar", isChecked: false },
-            { name: "Powdered Sugar", value: " powdered sugar", isChecked: false },
-            { name: "Cinnamon", value: "cinnamon", isChecked: false },
-            { name: "Nutmeg", value: "nutmeg", isChecked: false },
-            { name: "Ginger", value: "ginger", isChecked: false },
-            { name: "Honey", value: "honey", isChecked: false },
-            { name: "Maple Syrup", value: "maple syrup", isChecked: false },
-            { name: "Molasses", value: "molasses", isChecked: false },
-            { name: "Agave Nectar", value: "agave nectar", isChecked: false },
-            { name: "Corn Syrup", value: "corn syrup", isChecked: false },
-            { name: "Artificial Sweetener", value: "sugar substitute", isChecked: false },
+            { name: "Sugar", value: "sugar" },
+            { name: "Brown Sugar", value: "brown sugar" },
+            { name: "Powdered Sugar", value: " powdered sugar" },
+            { name: "Cinnamon", value: "cinnamon" },
+            { name: "Nutmeg", value: "nutmeg" },
+            { name: "Ginger", value: "ginger" },
+            { name: "Honey", value: "honey" },
+            { name: "Maple Syrup", value: "maple syrup" },
+            { name: "Molasses", value: "molasses" },
+            { name: "Agave Nectar", value: "agave nectar" },
+            { name: "Corn Syrup", value: "corn syrup" },
+            { name: "Artificial Sweetener", value: "sugar substitute" },
         ], [
-            { name: "Butter", value: "butter", isChecked: false },
-            { name: "Margarine", value: "margarine", isChecked: false },
-            { name: "Eggs", value: "eggs", isChecked: false },
-            { name: "Cream", value: "cream", isChecked: false },
-            { name: "Buttermilk", value: "buttermilk", isChecked: false },
-            { name: "Half and Half", value: "half and half", isChecked: false },
-            { name: "Powdered Milk", value: "powdered milk", isChecked: false },
-            { name: "Cream Cheese", value: "cream cheese", isChecked: false },
-            { name: "Condensed Milk", value: "condensed milk", isChecked: false },
-            { name: "Whipped Cream", value: "whipped cream", isChecked: false },
-            { name: "Soy Milk", value: "soy milk", isChecked: false },
-            { name: "Skim Milk", value: "skim milk", isChecked: false },
+            { name: "Butter", value: "butter" },
+            { name: "Margarine", value: "margarine" },
+            { name: "Eggs", value: "eggs" },
+            { name: "Cream", value: "cream" },
+            { name: "Buttermilk", value: "buttermilk" },
+            { name: "Half and Half", value: "half and half" },
+            { name: "Powdered Milk", value: "powdered milk" },
+            { name: "Cream Cheese", value: "cream cheese" },
+            { name: "Condensed Milk", value: "condensed milk" },
+            { name: "Whipped Cream", value: "whipped cream" },
+            { name: "Soy Milk", value: "soy milk" },
+            { name: "Skim Milk", value: "skim milk" },
         ], [
-            { name: "Peanut Butter", value: "peanut butter", isChecked: false },
-            { name: "Graham Crackers", value: "graham crackers", isChecked: false },
-            { name: "Chocolate Syrup", value: "chocolate syrup", isChecked: false },
-            { name: "Marshmallows", value: "marshmallows", isChecked: false },
-            { name: "Chocolate Chips", value: "milk chocolate chips", isChecked: false },
-            { name: "Raspberry Jam", value: "raspberry jam", isChecked: false },
-            { name: "Jelly", value: "jelly", isChecked: false },
-            { name: "Jello", value: "jello", isChecked: false },
-            { name: "White Chocolate", value: "white chocolate", isChecked: false },
-            { name: "Sprinkles", value: "sprinkles", isChecked: false },
-            { name: "Apples", value: "apple", isChecked: false },
+            { name: "Peanut Butter", value: "peanut butter" },
+            { name: "Graham Crackers", value: "graham crackers" },
+            { name: "Chocolate Syrup", value: "chocolate syrup" },
+            { name: "Marshmallows", value: "marshmallows" },
+            { name: "Chocolate Chips", value: "milk chocolate chips" },
+            { name: "Raspberry Jam", value: "raspberry jam" },
+            { name: "Jelly", value: "jelly" },
+            { name: "Jello", value: "jello" },
+            { name: "White Chocolate", value: "white chocolate" },
+            { name: "Sprinkles", value: "sprinkles" },
+            { name: "Apples", value: "apple" },
         ]
     ]
     igsinform: any = {};
     newArry: any = [];
     recipesFound: any;
-    newString: string = '';
     constructor(
         private http: HttpService,
         private router: Router,
@@ -83,21 +82,21 @@ export class HomeComponent implements OnInit {
                 this.newArry.push(key)
             }
         }
-        this.newString = this.newArry.join(",")
-        this.getRecipes();
+        let thisString = this.newArry.join(",")
+        this.getRecipes(thisString);
+        this.newArry = []
+
     }
 
-    getRecipes() {
-        let istr = this.newString
+    getRecipes(str) {
         let qstr = "dessert"
-        let recipes = this.http.getRecipes(istr, qstr)
+        let recipes = this.http.getRecipes(str, qstr)
         recipes.subscribe((data: any) => {
             let a = JSON.parse(data)
             for (let i = 0; i < a.results.length; i++) {
                 this.recipesFound.push(a.results[i])
             }
         })
-
 
     }
     resetToFalse() {
